@@ -138,6 +138,31 @@ a:hover {
     text-decoration: underline;
 }
 
+nav {
+    animation: drop 0.7s ease forwards;
+}
+
+header {
+    animation: drop 1s ease forwards;
+}
+
+footer {
+    animation: drop 1.5s ease forwards;
+}
+
+@keyframes drop {
+
+    0% {
+        opacity: 0;
+        transform: translateX(-300px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+}
 
 @media(max-width:900px) {
     footer {
@@ -152,3 +177,4 @@ a:hover {
         margin-bottom: 5px;
     }
 }
+
